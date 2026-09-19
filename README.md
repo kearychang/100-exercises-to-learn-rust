@@ -1,5 +1,9 @@
 # Learn Rust, one exercise at a time
 
+> [!IMPORTANT]
+> This repository is a fork of [mainmatter/100-exercises-to-learn-rust](https://github.com/mainmatter/100-exercises-to-learn-rust).
+> It includes a local browser-based exercise lab in [`app/`](app/) for navigating, editing, and running the exercises.
+
 You've heard about Rust, but you never had the chance to try it out?\
 This course is for you!
 
@@ -17,6 +21,31 @@ writing your own programs, one exercise at a time.
 
 Go to [rust-exercises.com](https://rust-exercises.com) and follow the instructions there
 to get started with the course.
+
+## Local exercise lab
+
+This fork includes a local web app with a collapsible exercise navigator,
+Rust syntax highlighting, session-based progress tracking, and a Cargo-backed
+submit-and-run workflow.
+
+```bash
+cd app
+npm install
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173). For a single-port
+local run, use `npm run build && npm start` and open
+[http://localhost:3001](http://localhost:3001).
+
+See [`app/README.md`](app/README.md) for details.
+
+Exercise code and progress are saved in browser `localStorage`, so they persist
+across tabs and browser restarts.
+
+### Local lab preview
+
+![Rust Exercises Local Lab](app/screenshot.png)
 
 ## Requirements
 

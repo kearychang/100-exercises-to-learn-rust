@@ -1,2 +1,5 @@
 target/
 exercises/progress.db
+.rust-exercises-target/
+app/node_modules/
+app/dist/

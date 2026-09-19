@@ -1,0 +1,24 @@
+{
+  "name": "rust-exercises-local",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail \"node server.mjs\" \"vite --host 127.0.0.1\"",
+    "build": "vite build",
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "codemirror": "^6.0.1",
+    "@codemirror/commands": "^6.8.1",
+    "@codemirror/lang-rust": "^6.0.2",
+    "@codemirror/language": "^6.11.0",
+    "@codemirror/state": "^6.5.2",
+    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/view": "^6.36.5"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "vite": "^7.1.4"
+  }
+}
